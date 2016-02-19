@@ -1,0 +1,4 @@
+﻿Enable-Migrations -ContextTypeName IdentityDb -migrationsdirectory DataContexts\IdentityMigrations
+Add-Migration -ConfigurationTypeName wclc.DataContexts.IdentityMigrations.Configuration "InitialCreate"
+Update-Database -configurationTypeName wclc.DataContexts.IdentityMigrations.Configuration -verbose
+										

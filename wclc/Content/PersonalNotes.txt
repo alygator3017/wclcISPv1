@@ -1,0 +1,6 @@
+﻿ERRORS:
+1) An exception of type 'System.Data.SqlClient.SqlException' occurred in EntityFramework.dll but was not handled in user code
+
+Additional information: A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.)
+-Error Occured while heading to appAdmin index page when running off of local host. Fixed by closing the database connection in the server
+	explorer. Seems that the connection being open caused it to be used by several places? Unsure of what this means
