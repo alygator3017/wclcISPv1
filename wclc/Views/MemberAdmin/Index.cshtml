@@ -39,9 +39,9 @@
         <th>
             @Html.DisplayNameFor(model => model.inGiftOf)
         </th>
-        <th>
+        @*<th>
             <input type="checkbox" id="selectAll" /> Select All
-        </th>
+        </th>*@
         <th></th>
     </tr>
     @{ var chkCounter = 0;
@@ -78,9 +78,9 @@ foreach (var item in Model) {
         <td>
             @Html.DisplayFor(modelItem => item.inGiftOf)
         </td>
-        <td>
+        @*<td>
             <input type="checkbox" name="chk@item.chkCounter" class="check" />
-        </td>
+        </td>*@
         <td>
             <!--Debug* @Html.ActionLink("Edit", "Edit", new { id=item.MemberId }) |-->
             @Html.ActionLink("Details", "Details", new { id=item.MemberId }) |
@@ -91,10 +91,9 @@ foreach (var item in Model) {
 }
 }
     <tr>
-        <td class="col-lg-12">
+        <td>
             <!--link exports the xml file of the current database-->
             @Html.ActionLink("Export XML file", "ExportToXML", "MemberAdmin")
-
         </td>
     </tr>
  
